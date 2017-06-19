@@ -1,0 +1,22 @@
+.nav-wrapper a {
+  margin-left: 10px;
+}
+
+section.valign-wrapper {
+  background-image: url("../img/hero.jpg");
+}
+
+.hero {
+  flex-direction: column;
+  justify-content: center;
+  height: 450px;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+i {
+  vertical-align: bottom;
+}
