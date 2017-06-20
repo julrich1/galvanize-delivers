@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Galvanize Delivers</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper blue darken-3">
+        <a class="brand-logo" href="index.html">Galvanize Delivers</a>
+        <ul id= "nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="order.html">Order Delivery</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="row">
+        <div class="col s6">
+          <h4>Menu</h4>
+        </div>
+        <div class="col s6">
+          <h4>Order</h4>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col s6">
+
+          <div class="row">
+
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/burger.jpg">
+                </div>
+                <div class="card-content">
+                  <p class="card-header">Royale with Cheese</p>
+                  <p>$8.99</p>
+                </div>
+                <div class="card-action">
+                  <a class="pink-text" href="#">Add to order</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/pizza.jpg">
+                </div>
+                <div class="card-content">
+                  <p class="card-header">Arugula Pie</p>
+                  <p>$11.99</p>
+                </div>
+                <div class="card-action">
+                  <a class="pink-text" href="#">Add to order</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col s6">
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ribs.jpg">
+                </div>
+                <div class="card-content">
+                  <p class="card-header">Smoked Swine</p>
+                  <p>$14.99</p>
+                </div>
+                <div class="card-action">
+                  <a class="pink-text" href="#">Add to order</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/ice_cream.jpg">
+                </div>
+                <div class="card-content">
+                  <p class="card-header">Ice Cream Biscut</p>
+                  <p>$7.99</p>
+                </div>
+                <div class="card-action">
+                  <a class="pink-text" href="#">Add to order</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col s6">
+
+          <table class="striped">
+            <thead>
+              <tr>
+                  <th>Item</th>
+                  <th>Item Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Royale with Cheese</td>
+                <td>$8.99</td>
+              </tr>
+              <tr>
+                <td>Arugula Pie</td>
+                <td>$11.99</td>
+              </tr>
+              <tr>
+                <td>Smoked Swine</td>
+                <td>$14.99</td>
+              </tr>
+              <tr>
+                <td>Ice Cream Biscut</td>
+                <td>$7.99</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>$43.96</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td>$4.40</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$48.3</td>
+            </tr>
+          </table>
+
+          <div>
+            <form>
+              <div class="input-field">
+                <i class="small material-icons prefix pink-text">account_circle</i>
+                <input placeholder="Bill Gates" id="name" type="text" class="validate">
+                <label for="name">Name</label>
+              </div>
+
+              <div class="input-field">
+                <i class="small material-icons prefix pink-text">phone</i>
+                <input placeholder="206-555-5555" id="phoneNumber" type="tel" class="validate">
+                <label for="name">Phone number</label>
+              </div>
+
+              <div class="input-field">
+                <i class="small material-icons prefix pink-text">domain</i>
+                <textarea id="address" class="materialize-textarea" placeholder="One Microsoft Way&#10;Redmond, WA 98052-6399"></textarea>
+                <label for="name">Address</label>
+              </div>
+
+              <div class="center">
+                <a class="waves-effect waves-red pink accent-2 btn-large">Place Order</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+
+    </main>
+
+    <footer class="page-footer blue darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Galvanize Delivers</h5>
+            <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright blue darken-4">
+        <div class="container">
+          © 2016 Galvanize Delivers
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

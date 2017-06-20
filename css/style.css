@@ -20,3 +20,17 @@ h1 {
 i {
   vertical-align: bottom;
 }
+
+th:last-of-type, td:last-of-type {
+  text-align: right;
+}
+
+table:last-of-type td:first-of-type {
+  text-align: right;
+  width: 75%;
+}
+
+.card-header {
+font-size: 20px;
+font-weight: 300;
+}
