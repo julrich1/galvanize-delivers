@@ -2,6 +2,8 @@ let TAX_RATE = 10;
 
 let subTotal = 0;
 
+$(".button-collapse").sideNav();
+
 $(".card").on("click", "a", function(event) {
   const $tr = $("<tr>");
   const $tdProduct = $("<td>");

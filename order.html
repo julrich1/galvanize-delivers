@@ -17,7 +17,12 @@
     <nav>
       <div class="nav-wrapper blue darken-3">
         <a class="brand-logo" href="index.html">Galvanize Delivers</a>
-        <ul id= "nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-activates="hamburg" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="order.html">Order Delivery</a></li>
+        </ul>
+        <ul class="side-nav" id="hamburg">
           <li><a href="order.html">Order Delivery</a></li>
         </ul>
       </div>
@@ -25,21 +30,16 @@
 
     <main class="container">
       <div class="row">
-        <div class="col s7">
-          <h4>Menu</h4>
-        </div>
-        <div class="col s5">
-          <h4>Order</h4>
-        </div>
-      </div>
-
-      <div class="row">
 
         <div class="col s7">
 
           <div class="row">
 
-            <div class="col s6">
+            <div class="col s12">
+              <h4>Menu</h4>
+            </div>
+
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/burger.jpg">
@@ -54,7 +54,7 @@
               </div>
             </div>
 
-            <div class="col s6">
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/pizza.jpg">
@@ -73,7 +73,7 @@
 
           <div class="row">
 
-            <div class="col s6">
+            <div class="col m6">
 
               <div class="card">
                 <div class="card-image">
@@ -89,7 +89,7 @@
               </div>
             </div>
 
-            <div class="col s6">
+            <div class="col m6">
               <div class="card">
                 <div class="card-image">
                   <img src="img/ice_cream.jpg">
@@ -109,7 +109,9 @@
         </div>
 
         <div class="col s5">
-
+          <div class="col s12">
+            <h4>Order</h4>
+          </div>
           <table class="striped">
             <thead>
               <tr>
@@ -119,22 +121,6 @@
             </thead>
 
             <tbody id="product-table">
-              <!-- <tr>
-                <td>Royale with Cheese</td>
-                <td>$8.99</td>
-              </tr>
-              <tr>
-                <td>Arugula Pie</td>
-                <td>$11.99</td>
-              </tr>
-              <tr>
-                <td>Smoked Swine</td>
-                <td>$14.99</td>
-              </tr>
-              <tr>
-                <td>Ice Cream Biscut</td>
-                <td>$7.99</td>
-              </tr> -->
             </tbody>
           </table>
 
