@@ -34,3 +34,25 @@ table:last-of-type td:first-of-type {
 font-size: 20px;
 font-weight: 300;
 }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: black;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: black;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: black;
+}
+
+#address, #phoneNumber, #name {
+  border-bottom: 2px solid rgb(76, 175, 80);
+}

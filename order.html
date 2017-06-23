@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script defer src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Galvanize Delivers</title>
@@ -45,10 +46,10 @@
                 </div>
                 <div class="card-content">
                   <p class="card-header">Royale with Cheese</p>
-                  <p>$8.99</p>
+                  <p class="price">$8.99</p>
                 </div>
                 <div class="card-action">
-                  <a class="pink-text" href="#">Add to order</a>
+                  <a class="pink-text">Add to order</a>
                 </div>
               </div>
             </div>
@@ -60,10 +61,10 @@
                 </div>
                 <div class="card-content">
                   <p class="card-header">Arugula Pie</p>
-                  <p>$11.99</p>
+                  <p class="price">$11.99</p>
                 </div>
                 <div class="card-action">
-                  <a class="pink-text" href="#">Add to order</a>
+                  <a class="pink-text">Add to order</a>
                 </div>
               </div>
             </div>
@@ -80,10 +81,10 @@
                 </div>
                 <div class="card-content">
                   <p class="card-header">Smoked Swine</p>
-                  <p>$14.99</p>
+                  <p class="price">$14.99</p>
                 </div>
                 <div class="card-action">
-                  <a class="pink-text" href="#">Add to order</a>
+                  <a class="pink-text">Add to order</a>
                 </div>
               </div>
             </div>
@@ -95,10 +96,10 @@
                 </div>
                 <div class="card-content">
                   <p class="card-header">Ice Cream Biscut</p>
-                  <p>$7.99</p>
+                  <p class="price">$7.99</p>
                 </div>
                 <div class="card-action">
-                  <a class="pink-text" href="#">Add to order</a>
+                  <a class="pink-text">Add to order</a>
                 </div>
               </div>
             </div>
@@ -117,8 +118,8 @@
               </tr>
             </thead>
 
-            <tbody>
-              <tr>
+            <tbody id="product-table">
+              <!-- <tr>
                 <td>Royale with Cheese</td>
                 <td>$8.99</td>
               </tr>
@@ -133,22 +134,22 @@
               <tr>
                 <td>Ice Cream Biscut</td>
                 <td>$7.99</td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
 
-          <table>
+          <table id="total-table">
             <tr>
               <td>Subtotal</td>
-              <td>$43.96</td>
+              <td>$0</td>
             </tr>
             <tr>
               <td>Tax</td>
-              <td>$4.40</td>
+              <td>$0</td>
             </tr>
             <tr>
               <td>Total</td>
-              <td>$48.3</td>
+              <td>$0</td>
             </tr>
           </table>
 
@@ -163,17 +164,17 @@
               <div class="input-field">
                 <i class="small material-icons prefix pink-text">phone</i>
                 <input placeholder="206-555-5555" id="phoneNumber" type="tel" class="validate">
-                <label for="name">Phone number</label>
+                <label for="phoneNumber">Phone number</label>
               </div>
 
               <div class="input-field">
                 <i class="small material-icons prefix pink-text">domain</i>
                 <textarea id="address" class="materialize-textarea" placeholder="One Microsoft Way&#10;Redmond, WA 98052-6399"></textarea>
-                <label for="name">Address</label>
+                <label for="address">Address</label>
               </div>
 
               <div class="center">
-                <a class="waves-effect waves-red pink accent-2 btn-large">Place Order</a>
+                <a id="place-order" class="waves-effect waves-red pink accent-2 btn-large">Place Order</a>
               </div>
             </form>
           </div>
