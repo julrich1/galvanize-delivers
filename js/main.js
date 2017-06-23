@@ -23,7 +23,19 @@ $(".card").on("click", "a", function(event) {
 });
 
 $("#place-order").click(function() {
-  
+  const name = $("#name").val();
+  const phoneNumber = $("#phoneNumber").val();
+  const address = $("#address").val();
+
+  if (!name || !phoneNumber || !address) {
+    Materialize.toast('Name, phone number, and address fields must be completed.', 4000);
+  }
+  else if (subTotal === 0) {
+    Materialize.toast('You must add items to the cart before checking out.', 4000);
+  }
+  else {
+    Materialize.toast('Order placed!', 4000);
+  }
 });
 
 function calculateTotal() {
