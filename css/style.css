@@ -56,3 +56,7 @@ font-weight: 300;
 #address, #phoneNumber, #name {
   border-bottom: 2px solid rgb(76, 175, 80);
 }
+
+.card-action a {
+  cursor: pointer;
+}
