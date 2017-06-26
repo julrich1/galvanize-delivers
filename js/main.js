@@ -35,6 +35,9 @@ $("#place-order").click(function() {
   else if (subTotal === 0) {
     Materialize.toast('You must add items to the cart before checking out.', 4000);
   }
+  else if (!phoneNumber.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)) {
+    Materialize.toast('Phone number must contain 10 digits.', 4000);
+  }
   else {
     Materialize.toast('Order placed!', 4000);
   }
